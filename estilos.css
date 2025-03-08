@@ -1,0 +1,412 @@
+* Estilos generales de la navbar */
+.navbar {
+    background-color: #f8f9fa; /* Color de fondo */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor fluido */
+.container-fluid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos de los elementos de la lista */
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espacio entre elementos */
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo de los enlaces */
+.navbar-nav .actual a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto hover */
+.navbar-nav .actual a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Asegurar que los spans dentro de los enlaces no afecten el diseño */
+.text-item {
+    display: inline-block;
+}
+
+.text-down {
+    display: none;
+}
+/* Estilo de los enlaces del navbar */
+.navbar-nav .nav-link {
+    color: #121212 !important; /* Color del texto */
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Efecto hover en los enlaces */
+.navbar-nav .nav-link:hover {
+    background-color: #ecf0f4; /* Color de fondo al pasar el mouse */
+    border-radius: 5px;
+}
+
+/* Estilo del menú desplegable */
+.dropdown-menu {
+    background-color: #1b1b1c; /* Fondo oscuro */
+    border: none; /* Sin borde */
+}
+
+/* Estilos para los elementos dentro del menú desplegable */
+.dropdown-menu .dropdown-item {
+    color: #101010 !important;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+/* Hover en los elementos del menú desplegable */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #fbfdfe; /* Color de fondo al pasar el mouse */
+}
+
+
+/* Botón de hamburguesa en móviles */
+.navbar-toggler {
+    border-color: rgba(19, 154, 64, 0.5); /* Color del borde */
+}
+
+/* Icono de la hamburguesa */
+.navbar-toggler-icon {
+    filter: invert(1); /* Hace que el icono sea blanco */
+}
+
+.carousel {
+    max-width: 500px;  /* Limita el ancho */
+    margin: auto;  /* Centra el carrusel */
+    border-radius: 10px;  /* Bordes redondeados */
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    width: 100%; /* Ajusta el tamaño de las imágenes */
+    height: 600px; /* Altura fija */
+    object-fit: cover; /* Recorta la imagen sin deformarla */
+    border-radius: 10px;
+}
+
+/* Indicadores del carrusel */
+.carousel-indicators button {
+    background-color: #fff !important;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+/* Botones de navegación */
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%);
+}
+
+/* Texto de los captions */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 250px; /* Reduce la altura en pantallas pequeñas */
+    }
+}
+/* Estilos para la imagen */
+.imagen-ia {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.producto {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton-eliminar {
+    background-color: rgb(49, 143, 49);
+    padding: 5px;
+}
+
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 16px;
+        }
+
+        /* Estilos del formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #0a0a0a;
+        }
+
+        input, select, textarea, button {
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        input[type="number"] {
+            width: auto;
+            max-width: 100px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 5px;
+            transition: background-color 0.3s ease;
+            padding: 14px;
+            border-radius: 6px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Sección de Producto */
+        .section-title {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #52b763;
+        }
+
+        .section {
+            background-color: #5ba04e;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h3 {
+            margin-top: 0;
+            font-size: 10px;
+            color: #333;
+        }
+
+        .section input[type="text"],
+        .section input[type="email"],
+        .section input[type="number"],
+        .section select,
+        .section textarea {
+            width: 100%;
+        }
+
+        /* Estilos de la sección de pago */
+        .payment-info {
+            background-color: #f7f7f7;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilos de error o mensajes */
+        .error {
+
+            color: rgb(56, 153, 82);
+            font-size: 14px;
+            margin-top: 10px;
+        }   
+        
+        footer {
+            background-color: #077c32; /* Fondo oscuro */
+            color: #fff; /* Texto blanco */
+            padding: 20px 0; /* Espaciado interno */
+            text-align: center; /* Centrar el texto */
+            font-size: 14px; /* Tamaño de fuente */
+        }
+
+        footer a {
+            color: #fff; /* Color de los enlaces */
+            text-decoration: none; /* Sin subrayado en los enlaces */
+            margin: 0 10px; /* Espacio entre los enlaces */
+        }
+
+        footer a:hover {
+            text-decoration: underline; /* Subrayar al pasar el ratón */
+            color: #4CAF50; /* Cambiar color al pasar el ratón */
+        }
+
+        footer p {
+            margin: 10px 0; /* Espaciado entre los párrafos */
+        }
+       
+        /* Estilos generales del formulario */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Estilos del formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input, select, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input[type="text"], input[type="email"], input[type="number"], input[type="tel"], textarea {
+            width: 100%;
+        }
+
+        select {
+            width: 100%;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .button {
+            padding: 12px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Estilos para los mensajes de error */
+        .error {
+            color: rgb(39, 134, 70);
+            font-size: 14px;
+        }
+    
